@@ -1,0 +1,566 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    transition: all .50s ease-in;
+}
+*{
+    transition: all .50s ease-in;
+}
+.Nav{
+    position: sticky;
+    top: 1px;
+    width: auto;
+    min-height: 10vh;
+    background: linear-gradient(40deg,  rgb(30, 1, 98),rgb(0, 0, 184),rgb(69, 4, 173),rgb(16, 8, 99));
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: auto;
+    border-radius: 5px;
+    justify-content: space-around;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+#Logo{
+    color:rgb(179, 179, 249);
+    font-size:200%;
+    width: auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    height: 100%;
+    border-radius: 3px;
+    display: inline-block;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 5%;
+    justify-content: center;
+    transition: all .5s ease-out;
+}
+.NavLinks{
+    width:50%;
+    margin-left:0%;
+    padding: 0%;
+    color:rgb(179, 179, 249);
+    font-size:90%;
+    font-weight: 600;
+    height: 100%;
+    list-style: none;
+    border-radius: 3px;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    align-items: flex-start;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.NavLinks li:hover{
+    border: 1.3px solid rgb(228, 8, 8); 
+    border-radius: 3px;
+    box-shadow: 
+    0 0 1px rgb(243, 40, 40),
+    0 0 5px rgb(239, 5, 5);
+    transition: all .5s ease-in;
+}
+
+#HireMe{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background: transparent;
+    transition: all .5s ease-in;
+}
+#Home:hover,#About:hover,#Projects:hover,#Skills:hover,#Contacts:hover{
+    cursor: pointer;
+    background: linear-gradient(40deg,rgb(3, 155, 249),red,rgb(174, 200, 4),rgb(234, 247, 228));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgb(250, 7, 23) 1px 0 15px;
+    transition: all .50s ease-in;
+    text-decoration: wavy;
+}
+.active{
+    transform: scale(1.5);
+    cursor: pointer;
+    background: linear-gradient(40deg,rgb(3, 155, 249),red,rgb(174, 200, 4),rgb(234, 247, 228));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgb(250, 7, 23) 1px 0 15px;
+   transition: all .50s ease-in;
+    text-decoration: wavy;
+}
+
+#HireMeBtn:active{
+    box-shadow: rgb(239, 5, 5) 1px 0 10px,
+    inset rgb(248, 60, 3) 1px 0 5px;
+}
+#Logo:hover,#HireMeBtn:hover{
+    cursor: pointer;
+    background: linear-gradient(40deg,rgb(3, 155, 249),red,rgb(174, 200, 4),rgb(234, 247, 228));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgb(250, 7, 23) 1px 0 15px;
+    transition: all .50s ease-in;
+    text-decoration: wavy;
+    transform: scale(1.3);
+}
+#Home,#About,#Projects,#Skills,#Contacts{
+    transition: all .5s ease-in;
+    margin: 2%;
+}
+#HireMeBtn{
+    height: 40px;
+    width: 100%;
+    font-size:18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    text-align: center;
+    color: rgb(179, 179, 249);;
+    border-radius: 3px;
+    transition: all .50s ease-in;
+}
+#HireMeBtn a{
+    color: red;
+    text-decoration: none;
+    font-size: 80%;
+    font-weight: 800;
+}
+#Hero{
+    color: rgb(0, 45, 84);
+    background: linear-gradient(40deg,  rgb(49, 3, 158),rgb(7, 7, 253),rgb(74, 4, 253),rgb(16, 3, 166));
+    width: auto;
+    height:100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    justify-content: space-around;
+    position:relative;
+    z-index: -1;
+}
+#Details{
+    background-color:transparent;
+    color:rgb(1, 1, 86);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-left:5%;
+}
+#Details greeting{
+    color: rgb(154, 170, 245);
+    font-size: 200%;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 1%;
+    margin-left: 10%;
+}
+#Details greeting span{
+    color: black;
+}
+#Details name{
+    color: rgb(28, 159, 235);
+    font-size: 300%;
+    width: 100%;
+}
+#Details name h{
+    color: rgb(228, 236, 244);
+    font-size: 50%;
+    font-weight: 400;
+    font-style: italic;
+}
+#Details name span{
+    color: rgb(100, 139, 180);
+    font-size: 100%;
+}
+#Details profession{
+    color: rgb(184, 31, 128);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: -.5%;
+}
+#Details p{
+    color: rgb(4, 195, 247);
+    font-size: 1.1rem;
+    max-width: 40rem;
+    line-height: 1.5rem;
+    font-style: italic;
+    text-align:left;
+}
+#ProfileImg{
+    background-image: url("WhatsApp Image 2025-01-14 at 14.10.36_a5a4f277.jpg");
+    background-size: 100%;
+    background-position:50% 40%;
+    aspect-ratio: 1/1.5;
+    width:10%;
+    mix-blend-mode:normal;
+    border: .1rem solid white;
+    box-shadow: 
+    0 0 .1rem white,
+    0 0 .5rem white,
+    0 0 3rem white,
+    inset 0 0 1rem rgb(8, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    align-self: flex-start;
+    font-size: 30px;
+    margin: 3%;
+    margin-left: 0%;
+    transition: all .50s ease-in;
+}
+#Buttons{
+    display:flex;
+    background: linear-gradient(40deg,  rgb(30, 1, 98),rgb(0, 0, 184),rgb(69, 4, 173),rgb(16, 8, 99));
+    width: auto;
+    min-height: 20vh;
+    mix-blend-mode:lighten;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-radius: 10px;
+    position:relative;
+    z-index: .1;
+}
+#Buttons button{
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 11, 21);
+    height: 50px ;
+    min-width: 20vh;
+    border-radius: 10px;
+    margin: .9%;
+    background-color: transparent;
+    border: none;
+    transition: all .50s ease-in;
+}
+#AboutMeBtn:hover,#TechSkillsBtn:hover,#SoftSkillsBtn:hover,#ProjectsBtn:hover,#EducationBtn:hover,#ServiceBtn:hover,#AchievementsBtn:hover{
+    cursor: pointer;
+    background: linear-gradient(40deg,rgb(3, 155, 249),red,rgb(174, 200, 4),rgb(234, 247, 228));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgb(250, 7, 23) 1px 0 15px;
+    transform: scale(1.5);
+    transition: all .50s ease-in;
+}
+.BtnCircle:hover{
+box-shadow: rgb(245, 172, 3) 1px 0 15px,
+inset rgb(248, 231, 3) 1px 0 15px;
+}
+
+.BtnCircle{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    border: 3px solid rgb(1, 18, 34);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .50s ease-in;
+}
+#Cards{
+    display:inline-block;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(40deg,  rgb(30, 1, 98),rgb(0, 0, 184),rgb(69, 4, 173),rgb(16, 8, 99));
+    padding-top: 0%;
+    border: 3px solid black;
+    border-radius: 10px;
+    z-index: 11;
+    overflow-x:auto;
+    overflow-y: hidden;
+    white-space:nowrap;
+}
+.Card{
+    display: inline-block;
+     margin: 10px 10px 10px 10px;
+     height: 300px;
+     width: 200px;
+     border: 3px solid black;
+     overflow: hidden;
+     background-color: transparent;
+     border-radius: 10px;
+}
+
+
+#AboutContainer,#ProjectsContainer,#SkillsContainer{
+    color: rgb(0, 45, 84);
+    background: linear-gradient(40deg,  rgb(49, 3, 158),rgb(7, 7, 253),rgb(74, 4, 253),rgb(16, 3, 166));
+    width: 100%;
+    height:100vh ;
+    display: none;
+    border: 5px solid black;
+    border-radius: 10px;
+    position:absolute;
+    transition: opacity 5s ease;
+    z-index: 1;
+    
+}
+#AboutContainer{
+    margin-top:0%;
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 5s ease;
+}
+#AboutImg{
+    
+    background-image: url("WhatsApp Image 2025-01-14 at 14.10.36_a5a4f277.jpg");
+    background-size: 80%;
+    background-position:50% 40%;
+    mix-blend-mode:normal;
+    height:10rem;
+    width:10rem;
+    border: .1rem solid white;
+    box-shadow: 
+    0 0 1rem white,
+    0 0 5rem white,
+    0 0 1rem white,
+    inset 0 0 .5rem rgb(236, 236, 240);
+    border-radius: 50%;
+    font-size: 30px;
+    border-bottom: none;
+    transition: all .50s ease-in;
+    margin-top: 1rem;
+}
+#AboutContainer name{
+    color: rgb(197, 195, 203);
+    font-size: 5rem; 
+    text-align: center;
+    text-shadow: rgb(86, 125, 243) 1px 0 10px;
+}
+#AboutContainer span{
+    color: rgb(2, 0, 8);
+    font-size: 5rem; 
+    text-align: center;
+    text-shadow: rgb(177, 183, 198) 1px 0 10px;
+}
+#AboutContainer profession{
+    color: rgb(209, 200, 238);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -0.5rem;
+}
+#AboutContainer intro,#ProjectsContainer intro{
+    color: rgb(221, 221, 223);
+    font-size: 1.5rem;    
+    margin-top:1rem;
+    width: auto;
+    margin: 1rem;
+    font-style: italic;
+    text-align: center;
+}
+#SkillsContainer skill,#ProjectsContainer projects,#AboutContainer skill{
+    color: rgb(0, 0, 14);
+    font-size:3rem; 
+    font-weight: 900;  
+    margin-top: 2rem; 
+}
+#SkillsContainer language,tech,soft,project{
+    color: rgb(0, 0, 0);
+    font-size:1.4rem; 
+    font-weight: 500;   
+    width: auto;
+    text-align: center;
+}
+#SkillsContainer language span,#SkillsContainer tech span,#SkillsContainer soft span,#ProjectsContainer project span{
+    color: rgb(253, 253, 253);
+    font-size:1rem;    
+    font-weight: 200;
+    text-shadow: none;
+}
+#ProjectsContainer{
+    margin-top:0%;
+    width: 100%;
+    height:100vh;
+    position:absolute;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 5s ease;
+}
+#SkillsContainer{
+    margin-top:0%;
+    width: 100%;
+    height:100vh;
+    position:absolute;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 5s ease;
+}
+#HomeContainer{
+    display: flex;
+    flex-direction: column;
+    transition: opacity 5s ease;
+}
+#ContactsContainer{
+    color: rgb(0, 45, 84);
+    background: linear-gradient(40deg,  rgb(49, 3, 158),rgb(7, 7, 253),rgb(74, 4, 253),rgb(16, 3, 166));
+    width: 100%;
+    height:100vh ;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    position:absolute;
+    transition: opacity 5s ease;
+    z-index: 1;
+}
+#ContactsContainer h1{
+    color: rgb(254, 254, 255);
+    font-size: 250%;
+    font-weight: 700;
+}
+#ContactsContainer h1 span{
+    color: rgb(0, 0, 0);
+}
+
+#ContactsContainer form{
+    margin-top: -1%;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#ContactsContainer form .input{
+    margin: .7%;
+    width: 20%;
+    height: 9%;
+    display: flex;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(180deg,rgb(66, 65, 65),rgb(65, 64, 64),rgb(240, 238, 240));
+    border-radius: 2px;
+    border: 1px  solid white;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 
+    0 0 .2rem white;
+}
+#ContactsContainer form #Message{
+    height: 15%;
+    display: flex;
+    align-items: center;    
+    justify-content: flex-start;
+}
+#ContactsContainer form #Message::placeholder,#ContactsContainer form input::placeholder{
+    color: rgb(0, 6, 11);
+    text-align: center;
+    
+}
+#ContactsContainer form button{
+    margin: .7%;
+    width: 10%;
+    height: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background: rgb(86, 86, 86);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 
+    0 0 .1rem white,
+    0 0 .5rem rgb(248, 248, 248);
+    background: linear-gradient(25deg,rgb(224, 2, 180),rgb(234, 82, 82),rgb(255, 4, 163));
+}
+#ContactsContainer form button:hover{
+    box-shadow: 
+    0 0 .1rem rgb(250, 254, 2),
+    0 0 .5rem rgb(245, 200, 0);
+    transform: scale(1.1);
+}
+#ContactsContainer #Links{
+    width: 100%;
+    height: 50vh;
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+#Links button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    width:25%;
+    background:transparent;
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(34, 39, 44);
+    overflow: hidden;
+    margin-bottom: 7%;
+}
+#Links div{
+    background-color: transparent;
+    aspect-ratio: 1;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -1.5%;
+    margin-bottom: 2.5%;
+    padding: 0%;
+    
+
+}
+#Links button:hover{
+    cursor: pointer;
+    background: linear-gradient(40deg,rgb(3, 155, 249),red,rgb(174, 200, 4),rgb(234, 247, 228));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgb(250, 7, 23) 1px 0 15px;
+    transform: scale(1.5);
+    transition: all .50s ease-in;
+}
+#Links lable{
+    display: flex;
+    flex-direction: column;
+    color: rgb(246, 249, 249);
+    font-size: 100%;
+    font-weight: 700;
+}
+.AlertMsg{
+    width: 20%;
+    height: 5%;
+    margin-bottom: 3%;
+    background-color:transparent;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-weight: 600;
+    text-shadow: rgb(230, 250, 7) 1px 0 15px;
+    font-size: 100%;
+}
+#Alert{
+    margin-bottom: .5%;
+}

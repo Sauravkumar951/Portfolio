@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div Class="Nav"> 
+     <div id="Logo">SAURAV </div>
+      
+    <ul class="NavLinks">
+        <li class="active"  id="Home"> Home </li>
+        <li id="About"> About </li>
+        <li id="Projects"> Projects </li>
+        <li id="Skills"> Skills </li>
+        <li id="Contacts"> ContactMe </li>
+    </ul>
+    <div id="HireMe">
+     <button id="HireMeBtn" ><a href="">
+        Download<br>Resume</a>
+    </button>
+    </div>
+    </div>
+        <div class="Header">
+            <div id="HomeContainer">
+
+              <div id="Hero">
+                <div id="Details">
+                    <greeting> Hello<span>!</span></greeting>
+                    <name><h>I am </h>Saurav <span>Kumar</span></name>
+                    <profession>WEB DEVELOPER</profession>
+                    <p>  An IT professional skilled in programming, system design, and web development.
+                         Certified in Java Development, I create innovative solutions to enhance user experiences. 
+                         From event management systems to tour websites, my projects showcase my technical expertise.
+                         Let’s connect and build something amazing!</p>
+                </div>
+                   <div id="ProfileImg"></div>
+                </div>
+            <div id="Buttons">
+                <button id="AboutMeBtn"><div class="BtnCircle"><i class="fas fa-regular fa-user"></i></div>AboutMe</button>
+                <button id="TechSkillsBtn"><div class="BtnCircle"><i class="fas fa-lightbulb icon"></i></div>Technical Skills</button>
+                <button id="SoftSkillsBtn"><div class="BtnCircle"><i class="fas fa-sync-alt"></i></div>Soft Skills</button>
+                <button id="ProjectsBtn"><div class="BtnCircle"><i class="fas fa-tasks"></i></div>Projects</button>
+                <button id="EducationBtn"><div class="BtnCircle"><i class="fas fa-book"></i></div>Education</button>
+                <button id="ServiceBtn"><div class="BtnCircle"><i class="fas fa-hands-helping"></i></div>Service</button>
+                <button id="AchievementsBtn"><div class="BtnCircle"><i class="fas fa-medal"></i></div>Achievements</button>
+            </div>
+            <div id="Cards">
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+            </div></div>
+            <div id="AboutContainer">
+            <div id="AboutImg"></div>
+            <name>Saurav<span>Kumar</span></name>
+            <profession>WEB DEVELOPER</profession>
+            <intro>Hi! I’m Saurav Kumar, an aspiring Technical Solutions Consultant with a passion for
+                 solving complex technical challenges and delivering exceptional customer experiences.
+                 With a strong foundation in system design, programming, and troubleshooting, I strive 
+                 to bridge the gap between technology and user satisfaction.</intro>
+            </div>
+
+        </div>        
+            <div id="ProjectsContainer">
+                <projects>PROJECTS</projects>
+                    <intro>I’ve worked on impactful projects that 
+                        demonstrate my ability to create scalable, 
+                        real-world solutions:</intro>
+                        <project>Event Management System: <span>Developed a platform to
+                             streamline event planning and coordination.</span></project>
+                        <project>Tour Website: <span>Built a website to facilitate booking and 
+                            scheduling for pilgrim tours and trips.</span></project>
+                        <project>Mini Projects: <span>Created a calculator app and 
+                            other tools to showcase problem-solving skills.
+                        </span></project>
+            </div>
+            <div id="SkillsContainer">
+                <skill>SKILLS</skill>
+                    <language>Programming Languages: <span>Java (NSDC Certified), 
+                        C++, PHP, VB.Net, Google Apps Script</span>
+                    </language>
+                    <tech>Technical Skills: <span>System design, technical troubleshooting, 
+                        and software development</span>
+                    </tech>
+                    <soft>Soft Skills:<span> Communication and customer relationship 
+                        management (Certified by TELEPERFORMANCE Global)</span>
+                    </soft>
+            </div>
+            <div id="ContactsContainer">
+                <h1>Contact <span>Me</span></h1>
+                <form method="POST" action="submit" id="contactForm" onsubmit="return false">
+                    <input type="text   " class="input" id="Name" placeholder="Enter Your FullName">
+                    <input type="email" class="input" id="Email"  placeholder="Enter Your Email">
+                    <input type="tel" class="input" id="MobileNumber"  placeholder="Enter Your MobileNumber">
+                    <textarea type="text" rows="4" spellcheck="false" cols="5" class="input"  id="Message"  placeholder="Enter Your Messaage..."></textarea>
+                    <button id="Submit_Button" type="submit">Submit</button>
+                    <div class="AlertMsg" id="Alert"></div>
+                    <div class="AlertMsg" id="Alert1"></div>
+                </form>
+
+                <div id="Links">
+                   <div> <button id="Insta"><i class="fa-brands fa-instagram"></i></button><lable>InstaGram</lable></div>
+                   <div><button id="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></button><lable>LinkedIn</lable></div>
+                   <div><button id="GitHub"><i class="fa-brands fa-github"></i></button><lable>GitHub</lable></div>
+                   <div><button id="Facebook"><i class="fa-brands fa-facebook"></i></button><lable>FaceBook</lable></div>
+                   <div><button id="Whatsapp"><i class="fa-brands fa-whatsapp"></i></button><lable>WhatsApp</lable></div>
+                </div>
+                
+            </div>
+    <div class="Footer">
+
+    </div>
+    <script src="https://unpkg.com/smtp.js/dist/smtp.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
